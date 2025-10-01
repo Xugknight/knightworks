@@ -1,0 +1,21 @@
+:root {
+    /* Light */
+    --bg: #EFE9DF;
+    --surface: #FAF7F1;
+    --text: #222222;
+    --subtext: #595959;
+    --border: #E6DED0;
+    --accent: #EA580C;
+    --accent-muted: #FFEDD5;
+}
+
+.dark {
+    /* Dark */
+    --bg: #0B0C0F;
+    --surface: #14161A;
+    --text: #EDEEF1;
+    --subtext: #A8AFBA;
+    --border: #242832;
+    --accent: #60A5FA;
+    --accent-muted: #1E293B;
+}

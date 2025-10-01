@@ -1,0 +1,14 @@
+[
+    {
+        "title": "CatCollector (Django CRUD Lab)",
+        "image": "/src/assets/lab-catcollector.jpg"
+    },
+    {
+        "title": "JS Array Methods Mini",
+        "image": "/src/assets/lab-array.jpg"
+    },
+    {
+        "title": "CSS Grid Practice",
+        "image": "/src/assets/lab-grid.jpg"
+    }
+]

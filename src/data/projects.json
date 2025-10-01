@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Reading List",
+        "desc": "Search Open Library, save books, filter by status.",
+        "tags": [
+            "React",
+            "Express",
+            "MongoDB"
+        ],
+        "image": "/src/assets/reading-list.jpg",
+        "live": "https://books.yourdomain.dev",
+        "code": "https://github.com/you/reading-list"
+    },
+    {
+        "title": "Quick Notes",
+        "desc": "Fast CRUD notes app.",
+        "tags": [
+            "MERN"
+        ],
+        "image": "/src/assets/quick-notes.jpg",
+        "live": "https://notes.yourdomain.dev",
+        "code": "https://github.com/you/quick-notes"
+    }
+]
