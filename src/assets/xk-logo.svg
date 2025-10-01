@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="120" viewBox="0 0 100 60">
+  <g fill="currentColor">
+    <!-- center bar: same height as wedges (y=12..48) -->
+    <rect x="43.0" y="12" width="14" height="36" rx="1.5"/>
+    <!-- left mirrored K arm -->
+    <path d="M8 12 H28 L50 30 L28 48 H8 L30 30 Z"/>
+    <!-- right mirrored K arm -->
+    <path d="M92 12 H72 L50 30 L72 48 H92 L70 30 Z"/>
+  </g>
+</svg>
