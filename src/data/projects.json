@@ -5,7 +5,7 @@
         "tags": [
             "MERN"
         ],
-        "image": "/src/assets/bookbound.png",
+        "image": "/bookbound.png",
         "live": "https://bookbound.knightworks.dev/",
         "code": "https://github.com/Xugknight/bookbound"
     },
@@ -15,7 +15,7 @@
         "tags": [
             "MERN"
         ],
-        "image": "/src/assets/quick-notes.png",
+        "image": "/quick-notes.png",
         "live": "https://quick-notes.knightworks.dev/",
         "code": "https://github.com/Xugknight/Quick-Notes"
     }
