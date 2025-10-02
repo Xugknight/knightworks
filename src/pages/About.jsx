@@ -47,7 +47,7 @@ export default function About() {
             </section>
 
             <section>
-                <h2 className="mt-8 text-lg font-medium text-[color:var(--text)]">Contact</h2>
+                <h2 className="mt-8 mb-2 text-lg font-medium text-[color:var(--text)]">Contact</h2>
                 <div className="mt-2 flex flex-wrap gap-2">
                     <a href="mailto:you@example.com" className="rounded-lg bg-[color:var(--text)] px-3 py-1.5 text-[color:var(--bg)] text-sm hover:opacity-90">Email</a>
                     <a href="https://github.com/Xugknight" target="_blank" rel="noreferrer" className="rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1.5 text-sm hover:opacity-90">GitHub</a>
