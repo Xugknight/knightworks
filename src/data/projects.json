@@ -1,15 +1,13 @@
 [
     {
-        "title": "Reading List",
+        "title": "Bookbound",
         "desc": "Search Open Library, save books, filter by status.",
         "tags": [
-            "React",
-            "Express",
-            "MongoDB"
+            "MERN"
         ],
-        "image": "/src/assets/reading-list.jpg",
-        "live": "https://books.yourdomain.dev",
-        "code": "https://github.com/you/reading-list"
+        "image": "/src/assets/bookbound.png",
+        "live": "https://bookbound.knightworks.dev/",
+        "code": "https://github.com/Xugknight/bookbound"
     },
     {
         "title": "Quick-Notes",
