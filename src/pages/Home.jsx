@@ -30,7 +30,7 @@ export default function Home() {
 
             {/* Bootcamp Gallery */}
             <section id="gallery" className="max-w-6xl mx-auto px-4 pb-12">
-                <h2 className="text-2xl md:text-3xl font-bold mb-6">Bootcamp Gallery</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6">Gallery</h2>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {gallery.map((g) => <GalleryItem key={g.title} {...g} />)}
                 </div>

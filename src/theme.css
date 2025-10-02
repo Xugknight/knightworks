@@ -7,6 +7,8 @@
     --border: #E6DED0;
     --accent: #EA580C;
     --accent-muted: #FFEDD5;
+    --header: #D4D2CD;
+    --header-border: #CFCBC4;
 }
 
 .dark {
@@ -18,4 +20,6 @@
     --border: #242832;
     --accent: #60A5FA;
     --accent-muted: #1E293B;
+    --header: #121418;
+    --header-border: #1C2026;
 }
