@@ -26,13 +26,14 @@ export default function About() {
                 <h2 className="text-xl font-semibold text-[color:var(--text)] mb-3">
                     Skills
                 </h2>
-                <p className="text-[color:var(--subtext)]">
-                    <span className="font-medium">Languages:</span> JavaScript, Python, SQL, HTML, CSS, Bash <br />
-                    <span className="font-medium">Frontend:</span> React, Vite, Tailwind, EJS, UI/UX polish <br />
-                    <span className="font-medium">Backend:</span> Node.js, Express, Django, REST APIs, Auth <br />
-                    <span className="font-medium">Database:</span> MongoDB, PostgreSQL, Mongoose <br />
-                    <span className="font-medium">Tools:</span> Git/GitHub, Heroku, Neon, Agile/Scrum, Postman, Cloudflare Pages
-                </p>
+                <ul className="mt-2 grid grid-cols-2 gap-2 text-[color:var(--subtext)]">
+                    <li>React / Vite / Tailwind</li>
+                    <li>Node / Express</li>
+                    <li>PostgreSQL / MongoDB</li>
+                    <li>Django / REST APIs</li>
+                    <li>Git / GitHub / Postman</li>
+                    <li>Heroku / Cloudflare Pages / Neon</li>
+                </ul>
             </section>
 
             <section>
