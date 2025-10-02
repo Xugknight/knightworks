@@ -12,13 +12,13 @@
         "code": "https://github.com/you/reading-list"
     },
     {
-        "title": "Quick Notes",
+        "title": "Quick-Notes",
         "desc": "Fast CRUD notes app.",
         "tags": [
             "MERN"
         ],
-        "image": "/src/assets/quick-notes.jpg",
-        "live": "https://notes.yourdomain.dev",
-        "code": "https://github.com/you/quick-notes"
+        "image": "/src/assets/quick-notes.png",
+        "live": "https://quick-notes.knightworks.dev/",
+        "code": "https://github.com/Xugknight/Quick-Notes"
     }
 ]

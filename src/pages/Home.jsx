@@ -41,9 +41,9 @@ export default function Home() {
                 <h2 className="text-2xl md:text-3xl font-bold mb-3">Contact</h2>
                 <p className="text-[color:var(--subtext)]">Reach out via:</p>
                 <div className="mt-3 flex gap-4 text-sm">
-                    <a href="https://github.com/you" target="_blank" className="underline decoration-dotted underline-offset-4">GitHub</a>
-                    <a href="https://linkedin.com/in/you" target="_blank" className="underline decoration-dotted underline-offset-4">LinkedIn</a>
-                    <a href="mailto:you@domain.dev" className="underline decoration-dotted underline-offset-4">Email</a>
+                    <a href="https://github.com/Xugknight" target="_blank" className="underline decoration-dotted underline-offset-4">GitHub</a>
+                    {/* <a href="https://linkedin.com/in/you" target="_blank" className="underline decoration-dotted underline-offset-4">LinkedIn</a>
+                    <a href="mailto:you@domain.dev" className="underline decoration-dotted underline-offset-4">Email</a> */}
                 </div>
             </section>
         </main>
