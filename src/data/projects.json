@@ -7,7 +7,8 @@
         ],
         "image": "/bookbound.png",
         "live": "https://bookbound.knightworks.dev/",
-        "code": "https://github.com/Xugknight/bookbound"
+        "code": "https://github.com/Xugknight/bookbound",
+        "featured": true
     },
     {
         "title": "Quick-Notes",
@@ -17,6 +18,7 @@
         ],
         "image": "/quick-notes.png",
         "live": "https://quick-notes.knightworks.dev/",
-        "code": "https://github.com/Xugknight/Quick-Notes"
+        "code": "https://github.com/Xugknight/Quick-Notes",
+        "featured": true
     }
 ]

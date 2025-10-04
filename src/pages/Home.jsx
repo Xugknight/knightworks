@@ -1,13 +1,17 @@
-import ProjectCard from '../components/ProjectCard';
-import GalleryItem from '../components/GalleryItem';
-import projects from '../data/projects.json';
-import gallery from '../data/gallery.json';
+import { Link } from "react-router";
+import ProjectCard from "../components/ProjectCard";
+import GalleryItem from "../components/GalleryItem";
+import projects from "../data/projects.json";
+import gallery from "../data/gallery.json";
 
 export default function Home() {
+    const featured = (projects || []).filter(p => p.featured).slice(0, 3);
+    const galleryTeaser = (gallery || []).slice(0, 6);
+
     return (
-        <main className="min-h-screen bg-[color:var(--bg)] text-[color:var(--text)]">
+        <main className="min-h-screen">
             {/* Hero */}
-            <section className="max-w-6xl mx-auto px-4 py-16">
+            <section className="max-w-6xl mx-auto px-4 py-16 animate-fadein [animation-delay:0ms]">
                 <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
                     Build. Ship. Iterate.
                 </h1>
@@ -15,35 +19,58 @@ export default function Home() {
                     Full-stack developer crafting clean, performant apps.
                 </p>
                 <div className="mt-6 flex gap-3">
-                    <a href="#projects" className="px-4 py-2 rounded-xl bg-[color:var(--accent)] text-black font-semibold">View Projects</a>
-                    <a href="#contact" className="px-4 py-2 rounded-xl border border-[color:var(--border)]">Contact</a>
+                    <Link
+                        to="/projects"
+                        className="px-4 py-2 rounded-xl bg-[color:var(--accent)] text-black font-semibold"
+                    >
+                        View Projects
+                    </Link>
+                    <Link
+                        to="/about"
+                        className="px-4 py-2 rounded-xl border border-[color:var(--border)]"
+                    >
+                        About
+                    </Link>
                 </div>
             </section>
 
-            {/* Projects */}
-            <section id="projects" className="max-w-6xl mx-auto px-4 pb-12">
-                <h2 className="text-2xl md:text-3xl font-bold mb-6">Featured Projects</h2>
+            {/* Featured Projects */}
+            <section className="max-w-6xl mx-auto px-4 pb-12 animate-fadein [animation-delay:120ms]">
+                <div className="mb-6 flex items-end justify-between">
+                    <h2 className="text-2xl md:text-3xl font-bold">Featured Projects</h2>
+                    <Link to="/projects" className="text-sm text-[color:var(--subtext)] hover:opacity-80">
+                        View all →
+                    </Link>
+                </div>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {projects.map((p) => <ProjectCard key={p.title} {...p} />)}
+                    {(featured.length ? featured : projects.slice(0, 2)).map((p) => (
+                        <ProjectCard key={p.title} {...p} />
+                    ))}
                 </div>
             </section>
 
-            {/* Bootcamp Gallery */}
-            <section id="gallery" className="max-w-6xl mx-auto px-4 pb-12">
-                <h2 className="text-2xl md:text-3xl font-bold mb-6">Gallery</h2>
+            {/* Gallery teaser */}
+            <section className="max-w-6xl mx-auto px-4 pb-12 animate-fadein [animation-delay:240ms]">
+                <div className="mb-6 flex items-end justify-between">
+                    <h2 className="text-2xl md:text-3xl font-bold">Gallery</h2>
+                    <Link to="/gallery" className="text-sm text-[color:var(--subtext)] hover:opacity-80">
+                        See more →
+                    </Link>
+                </div>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {gallery.map((g) => <GalleryItem key={g.title} {...g} />)}
+                    {galleryTeaser.map((g) => (
+                        <GalleryItem key={g.title ?? g.src} {...g} />
+                    ))}
                 </div>
             </section>
 
-            {/* Contact */}
-            <section id="contact" className="max-w-6xl mx-auto px-4 pb-16">
+            {/* Contact teaser */}
+            <section className="max-w-6xl mx-auto px-4 pb-16 animate-fadein [animation-delay:360ms]">
                 <h2 className="text-2xl md:text-3xl font-bold mb-3">Contact</h2>
                 <p className="text-[color:var(--subtext)]">Reach out via:</p>
                 <div className="mt-3 flex gap-4 text-sm">
                     <a href="https://github.com/Xugknight" target="_blank" className="underline decoration-dotted underline-offset-4">GitHub</a>
-                    {/* <a href="https://linkedin.com/in/you" target="_blank" className="underline decoration-dotted underline-offset-4">LinkedIn</a>
-                    <a href="mailto:you@domain.dev" className="underline decoration-dotted underline-offset-4">Email</a> */}
+                    <Link to="/about" className="underline decoration-dotted underline-offset-4">More →</Link>
                 </div>
             </section>
         </main>
