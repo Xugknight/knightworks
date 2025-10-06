@@ -1,7 +1,27 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
+    const { pathname } = useLocation();
+
+    const navLink = (to, label) => {
+        const isActive = pathname === to;
+        return (
+            <Link
+                to={to}
+                className={[
+                    "text-sm link-underline transition-opacity",
+                    isActive
+                        ? "text-[color:var(--text)]"
+                        : "text-[color:var(--subtext)] hover:opacity-80"
+                ].join(" ")}
+                aria-current={isActive ? "page" : undefined}
+            >
+                {label}
+            </Link>
+        );
+    };
+
     return (
         <header className="sticky top-0 z-50 bg-[color:var(--header)]/90 backdrop-blur border-b border-[color:var(--header-border)]">
             <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between text-[color:var(--text)]">
@@ -15,10 +35,10 @@ export default function Header() {
                     </svg>
                 </Link>
 
-                <nav className="flex items-center gap-4 text-sm text-[color:var(--subtext)]">
-                    <Link to="/projects" className="hover:opacity-80">Projects</Link>
-                    <Link to="/gallery" className="hover:opacity-80">Gallery</Link>
-                    <Link to="/about" className="hover:opacity-80">About</Link>
+                <nav className="flex items-center gap-4">
+                    {navLink("/projects", "Projects")}
+                    {navLink("/gallery", "Gallery")}
+                    {navLink("/about", "About")}
                     <ThemeToggle />
                 </nav>
             </div>
