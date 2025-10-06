@@ -38,7 +38,7 @@ export default function Home() {
             <section className="max-w-6xl mx-auto px-4 pb-12 animate-fadein [animation-delay:120ms]">
                 <div className="mb-6 flex items-end justify-between">
                     <h2 className="text-2xl md:text-3xl font-bold">Featured Projects</h2>
-                    <Link to="/projects" className="text-sm text-[color:var(--subtext)] hover:opacity-80">
+                    <Link to="/projects" className="text-sm text-[color:var(--subtext)] link-underline hover:opacity-80">
                         View all →
                     </Link>
                 </div>
@@ -53,7 +53,7 @@ export default function Home() {
             <section className="max-w-6xl mx-auto px-4 pb-12 animate-fadein [animation-delay:240ms]">
                 <div className="mb-6 flex items-end justify-between">
                     <h2 className="text-2xl md:text-3xl font-bold">Gallery</h2>
-                    <Link to="/gallery" className="text-sm text-[color:var(--subtext)] hover:opacity-80">
+                    <Link to="/gallery" className="text-sm text-[color:var(--subtext)] link-underline hover:opacity-80">
                         See more →
                     </Link>
                 </div>
@@ -69,8 +69,8 @@ export default function Home() {
                 <h2 className="text-2xl md:text-3xl font-bold mb-3">Contact</h2>
                 <p className="text-[color:var(--subtext)]">Reach out via:</p>
                 <div className="mt-3 flex gap-4 text-sm">
-                    <a href="https://github.com/Xugknight" target="_blank" className="underline decoration-dotted underline-offset-4">GitHub</a>
-                    <Link to="/about" className="underline decoration-dotted underline-offset-4">More →</Link>
+                    <a href="https://github.com/Xugknight" target="_blank" rel="noreferrer" className="underline decoration-dotted underline-offset-4">GitHub</a>
+                    <Link to="/about" className="text-sm text-[color:var(--subtext)] link-underline hover:opacity-80">More →</Link>
                 </div>
             </section>
         </main>

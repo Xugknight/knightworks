@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* ---------- Base (global) ---------- */
 @layer base {
 
     html,
@@ -8,18 +9,22 @@
         height: 100%;
     }
 
+    /* Page background + default text tied to theme vars */
     body {
-        @apply bg-[color:var(--bg)] text-[color:var(--text)] antialiased;
-        @apply transition-colors;
+        @apply bg-[color:var(--bg)] text-[color:var(--text)] antialiased transition-colors;
     }
 
+    /* Selection color using your accent */
     ::selection {
         background: var(--accent);
         color: var(--surface);
     }
 }
 
+/* ---------- Utilities (animations, links, focus) ---------- */
 @layer utilities {
+
+    /* Entrance animation */
     @keyframes fadein-up {
         0% {
             opacity: 0;
@@ -34,5 +39,39 @@
 
     .animate-fadein {
         animation: fadein-up .5s cubic-bezier(.22, .61, .36, 1) both;
+    }
+
+    /* Respect user's reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+        .animate-fadein {
+            animation: none;
+        }
+    }
+
+    /* Underline that animates in on hover/focus */
+    .link-underline {
+        position: relative;
+    }
+
+    .link-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 1px;
+        background: currentColor;
+        transition: width .18s ease;
+    }
+
+    .link-underline:hover::after,
+    .link-underline:focus-visible::after {
+        width: 100%;
+    }
+
+    /* Accessible focus ring using currentColor */
+    .focus-ring {
+        outline: none;
+        box-shadow: 0 0 0 2px color-mix(in srgb, currentColor 40%, transparent);
     }
 }
