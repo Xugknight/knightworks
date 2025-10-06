@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import ProjectCard from "../components/ProjectCard";
 import GalleryItem from "../components/GalleryItem";
+import Meta from "../components/Meta";
 import projects from "../data/projects.json";
 import gallery from "../data/gallery.json";
 
@@ -10,6 +11,13 @@ export default function Home() {
 
     return (
         <main className="min-h-screen">
+
+            <Meta
+                title="Knightworks — Build. Ship. Iterate."
+                description="Full-stack portfolio by Tim. Clean, performant apps."
+                canonical="https://knightworks.dev/"
+            />
+
             {/* Hero */}
             <section className="max-w-6xl mx-auto px-4 py-16 animate-fadein [animation-delay:0ms]">
                 <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">

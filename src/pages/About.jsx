@@ -1,6 +1,15 @@
+import Meta from "../components/Meta";
+
 export default function About() {
     return (
         <main className="max-w-3xl mx-auto px-4 py-12">
+
+            <Meta
+                title="About — Knightworks"
+                description="Full-stack developer blending clean design with reliable engineering."
+                canonical="https://knightworks.dev/about"
+            />
+
             <h1 className="text-3xl font-semibold text-[color:var(--text)] mb-6">
                 About Me
             </h1>
