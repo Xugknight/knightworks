@@ -22,7 +22,7 @@ export default function About() {
 
             <section className="mb-8">
                 <h2 className="text-xl font-semibold text-[color:var(--text)] mb-3">
-                    What I’m working on
+                    What I am working on
                 </h2>
                 <ul className="list-disc list-inside space-y-2 text-[color:var(--subtext)]">
                     <li>Sharpening my skills in modern web stacks (React, Node, Django).</li>
@@ -50,7 +50,7 @@ export default function About() {
                     Outside of Dev
                 </h2>
                 <p className="text-[color:var(--subtext)]">
-                    When I’m not coding, you’ll probably find me gaming 🎮, lifting 🏋🏼‍♂️, or
+                    When I am not coding, you will probably find me gaming, lifting, or
                     diving into a new hobby. I like exploring and learning skills both
                     inside and outside of tech.
                 </p>
