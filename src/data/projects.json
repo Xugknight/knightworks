@@ -1,5 +1,6 @@
 [
     {
+        "slug": "bookbound",
         "title": "Bookbound",
         "desc": "Search Open Library, save books, filter by status.",
         "tags": [
@@ -11,6 +12,7 @@
         "featured": true
     },
     {
+        "slug": "quick-notes",
         "title": "Quick-Notes",
         "desc": "Fast CRUD notes app.",
         "tags": [
