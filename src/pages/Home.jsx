@@ -3,6 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import GalleryItem from "../components/GalleryItem";
 import Meta from "../components/Meta";
 import projects from "../data/projects.json";
+import { projectImages } from "../data/projectImages";
 import gallery from "../data/gallery.json";
 
 export default function Home() {
@@ -51,9 +52,11 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {(featured.length ? featured : projects.slice(0, 2)).map((p) => (
-                        <ProjectCard key={p.title} {...p} />
-                    ))}
+                    {(featured.length ? featured : projects.slice(0, 2)).map((p) => {
+                        const img = projectImages[p.slug]?.hero;
+                        const image = img ? img.src : p.image;
+                        return <ProjectCard key={p.title} {...p} image={image} />;
+                    })}
                 </div>
             </section>
 

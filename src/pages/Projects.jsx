@@ -1,6 +1,7 @@
 import projects from "../data/projects.json";
 import ProjectCard from "../components/ProjectCard";
 import Meta from "../components/Meta";
+import { projectImages } from "../data/projectImages";
 
 export default function Projects() {
     return (
@@ -20,9 +21,11 @@ export default function Projects() {
             </header>
 
             <section className="grid gap-6 sm:grid-cols-2">
-                {projects.map((p) => (
-                    <ProjectCard key={p.title} {...p} />
-                ))}
+                {projects.map((p) => {
+                    const img = projectImages[p.slug]?.hero;
+                    const image = img ? img.src : p.image;
+                    return <ProjectCard key={p.title} {...p} image={image} />;
+                })}
             </section>
         </main>
     );
