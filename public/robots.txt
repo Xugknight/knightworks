@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://knightworks.dev/sitemap.xml
