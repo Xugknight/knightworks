@@ -1,14 +1,16 @@
 import { Link } from "react-router";
 import ProjectCard from "../components/ProjectCard";
-import GalleryItem from "../components/GalleryItem";
 import Meta from "../components/Meta";
+import GalleryAlbumCard from "../components/GalleryAlbumCard";
 import projects from "../data/projects.json";
 import { projectImages } from "../data/projectImages";
-import gallery from "../data/gallery.json";
+import albums from "../data/gallery-albums.json";
+import { galleryImages } from "../data/galleryImages";
 
 export default function Home() {
     const featured = (projects || []).filter(p => p.featured).slice(0, 3);
-    const galleryTeaser = (gallery || []).slice(0, 6);
+    const finch = albums.find(a => a.slug === "finchcollector");
+    const finchCover = finch ? galleryImages[finch.slug]?.[0] : null;
 
     return (
         <main className="min-h-screen">
@@ -60,7 +62,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Gallery teaser */}
+            {/* Featured Gallery*/}
             <section className="max-w-6xl mx-auto px-4 pb-12 animate-fadein [animation-delay:240ms]">
                 <div className="mb-6 flex items-end justify-between">
                     <h2 className="text-2xl md:text-3xl font-bold">Gallery</h2>
@@ -68,14 +70,20 @@ export default function Home() {
                         See more →
                     </Link>
                 </div>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {galleryTeaser.map((g) => (
-                        <GalleryItem key={g.title ?? g.src} {...g} />
-                    ))}
+
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {finch && (
+                        <GalleryAlbumCard
+                            slug={finch.slug}
+                            title={finch.title}
+                            count={finch.count}
+                            cover={finchCover}
+                        />
+                    )}
                 </div>
             </section>
 
-            {/* Contact teaser */}
+            {/* Contact */}
             <section className="max-w-6xl mx-auto px-4 pb-16 animate-fadein [animation-delay:360ms]">
                 <h2 className="text-2xl md:text-3xl font-bold mb-3">Contact</h2>
                 <p className="text-[color:var(--subtext)]">Reach out via:</p>

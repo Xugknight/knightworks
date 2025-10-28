@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "eldenmemory",
+    "title": "Elden Ring Memory",
+    "desc": "Memory card game with Elden Ring characters"
+  },
+  {
+    "slug": "finchcollector",
+    "title": "Finch Collector",
+    "desc": "Django CRUD lab assignment"
+  }
+]
