@@ -22,5 +22,18 @@
         "live": "https://quick-notes.knightworks.dev/",
         "code": "https://github.com/Xugknight/Quick-Notes",
         "featured": true
+    },
+    {
+        "title": "Elden Ring Memory",
+        "slug": "eldenmemory",
+        "desc": "Memory card matching game with Elden Ring characters",
+        "tags": [
+            "Static",
+            "HTML/CSS/JS",
+            "Browser Game"
+        ],
+        "live": "https://xugknight.github.io/Concentration-Memory-Game/",
+        "code": "https://github.com/Xugknight/Concentration-Memory-Game",
+        "featured": false
     }
 ]
