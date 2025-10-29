@@ -23,7 +23,7 @@ export default function Home() {
             {/* Hero */}
             <section className="max-w-6xl mx-auto px-4 py-16 animate-fadein [animation-delay:0ms]">
                 <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-                    Reforge. Refactor. Release.
+                    Knightworks
                 </h1>
                 <p className="text-[color:var(--subtext)] mt-3 max-w-xl">
                     Clean, reliable apps — forged for performance, built to endure.
