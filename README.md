@@ -1,9 +1,6 @@
 # Knightworks
 [![Live](https://img.shields.io/badge/Live-knightworks.dev-2ea44f?logo=google-chrome&logoColor=white)](https://knightworks.dev)
 
-**Reforge. Refactor. Release.**  
-Clean, reliable apps — forged for performance, built to endure.
-
 ## Overview
 Personal portfolio. Built as a fast, modern SPA with client-side routing, optimized images, and clean visual hierarchy.
 
