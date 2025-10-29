@@ -26,11 +26,35 @@ export default function GalleryAlbum() {
       <p className="text-[color:var(--subtext)] mb-6">{album.desc}</p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {images.map((img, i) => (
-          <a key={i} href={img.src} target="_blank" rel="noreferrer" className="block rounded-xl overflow-hidden border border-[color:var(--border)]">
-            <img src={img.src} srcSet={img.srcSet} sizes={img.sizes} alt={img.alt || `${album.title} screenshot ${i+1}`} loading="lazy" decoding="async" className="w-full h-full object-cover" />
-          </a>
-        ))}
+        {images.map((img, i) => {
+          const caption = img.caption ?? img.alt ?? `${album.title} screenshot ${i + 1}`;
+          return (
+            <a
+              key={i}
+              href={img.src}
+              target="_blank"
+              rel="noreferrer"
+              className="block rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)] hover:opacity-95 focus-visible:focus-ring overflow-hidden"
+            >
+              <figure>
+                <div className="aspect-[16/9] bg-[color:var(--accent-muted)]">
+                  <img
+                    src={img.src}
+                    srcSet={img.srcSet}
+                    sizes={img.sizes}
+                    alt={img.alt || caption}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <figcaption className="p-3 text-sm text-[color:var(--subtext)]">
+                  {caption}
+                </figcaption>
+              </figure>
+            </a>
+          );
+        })}
       </div>
     </main>
   );

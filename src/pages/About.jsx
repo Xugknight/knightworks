@@ -1,6 +1,16 @@
 import Meta from "../components/Meta";
+import { useEffect } from "react";
 
 export default function About() {
+
+useEffect(() => {
+    console.log(
+      "%cYou are the ice that melts in the rain,%c I am the steel made strong in the flame.",
+      "color:#60a5fa;font-weight:600;",
+      "color:#f59e0b;font-weight:700;"
+    );
+  }, []);
+
     return (
         <main className="max-w-3xl mx-auto px-4 py-12">
 
