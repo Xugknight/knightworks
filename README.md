@@ -29,4 +29,5 @@ npm install
 npm run dev       # local dev (Vite)
 npm run build     # production build
 npm run preview   # preview production build
-node scripts/build-images-mjs # Script for converting raw-images to webp
+node scripts/build-images.mjs # convert raw-images → responsive WebP in src/assets
+```
