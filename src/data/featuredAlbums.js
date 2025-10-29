@@ -1,0 +1,1 @@
+export const FEATURED_ALBUM_SLUGS = ["finchcollector"]; 
