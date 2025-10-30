@@ -10,6 +10,10 @@ import qn1200 from "../assets/projects/quick-notes/quick-notes-1200.webp";
 import em800 from "../assets/gallery/eldenmemory/eldenmemoryhome-800.webp";
 import em1200 from "../assets/gallery/eldenmemory/eldenmemoryhome-1200.webp";
 
+// Write That Down
+import wtd800 from "../assets/projects/wtd/light-800.webp"
+import wtd1200 from "../assets/projects/wtd/light-1200.webp"
+
 export const projectImages = {
     "bookbound": {
         hero: {
@@ -33,6 +37,14 @@ export const projectImages = {
             srcSet: `${em800} 800w, ${em1200} 1200w`,
             sizes: "(max-width: 768px) 92vw, 1200px",
             alt: "Elden Ring styled memory card matching game",
+        },
+    },
+    "wtd": {
+        hero: {
+            src: wtd1200,
+            srcSet: `${wtd800} 800w, ${wtd1200} 1200w`,
+            sizes: "(max-width: 768px) 92vw, 1200px",
+            alt: "A fast, offline-friendly scratchpad",
         },
     },
 };
