@@ -8,5 +8,10 @@
     "slug": "finchcollector",
     "title": "Finch Collector",
     "desc": "A Python and Django lab assignment"
+  },
+  {
+    "slug": "wtd",
+    "title": "Write That Down",
+    "desc": "A fast, offline-friendly scratchpad"
   }
 ]

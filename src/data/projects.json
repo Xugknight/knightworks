@@ -35,5 +35,19 @@
         "live": "https://xugknight.github.io/Concentration-Memory-Game/",
         "code": "https://github.com/Xugknight/Concentration-Memory-Game",
         "featured": false
+    },
+    {
+        "title": "Write That Down",
+        "slug": "wtd",
+        "desc": "A fast, offline-friendly scratchpad",
+        "tags": [
+            "Static",
+            "HTML/CSS/JS",
+            "Scratchpad",
+            "WIP"
+        ],
+        "live": "https://xugknight.github.io/wtd/",
+        "code": "https://github.com/Xugknight/wtd",
+        "featured": false
     }
 ]

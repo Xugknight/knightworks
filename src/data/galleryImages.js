@@ -24,6 +24,12 @@ import finchToyAdd1200 from "../assets/gallery/finchcollector/finchtoyform-1200.
 import finchDelete800 from "../assets/gallery/finchcollector/finchconfirmdelete-800.webp";
 import finchDelete1200 from "../assets/gallery/finchcollector/finchconfirmdelete-1200.webp";
 
+// Write That Down
+import wtdd800 from "../assets/projects/wtd/dark-800.webp"
+import wtdd1200 from "../assets/projects/wtd/dark-1200.webp"
+import wtdl800 from "../assets/projects/wtd/light-800.webp"
+import wtdl1200 from "../assets/projects/wtd/light-1200.webp"
+
 export const galleryImages = {
     eldenmemory: [
         {
@@ -104,6 +110,22 @@ export const galleryImages = {
             sizes: "(max-width: 768px) 92vw, 1200px",
             alt: "Finch Collector confirmation page before removing a finch from the database",
             caption: "Confirmation page before removing a finch from the index",
+        },
+    ],
+    wtd: [
+        {
+            src: wtdd1200,
+            srcSet: `${wtdd800} 800w, ${wtdd1200} 1200w`,
+            sizes: "(max-width: 768px) 92vw, 1200px",
+            alt: "Write That Down page in dark mode",
+            caption: "Write That Down page in dark mode",
+        },
+        {
+            src: wtdl1200,
+            srcSet: `${wtdl800} 800w, ${wtdl1200} 1200w`,
+            sizes: "(max-width: 768px) 92vw, 1200px",
+            alt: "Write That Down page in light mode",
+            caption: "Write That Down page in light mode",
         },
     ],
 };
