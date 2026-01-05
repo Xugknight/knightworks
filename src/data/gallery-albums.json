@@ -13,5 +13,10 @@
     "slug": "wtd",
     "title": "Write That Down",
     "desc": "A fast, offline-friendly scratchpad"
+  },
+  {
+    "slug": "otb",
+    "title": "Olde Town Blade",
+    "desc": "Mock local barbershop website built with a custom WordPress theme and bespoke Gutenberg blocks using PHP and CSS"
   }
 ]

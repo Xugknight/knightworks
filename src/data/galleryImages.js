@@ -30,6 +30,24 @@ import wtdd1200 from "../assets/projects/wtd/dark-1200.webp"
 import wtdl800 from "../assets/projects/wtd/light-800.webp"
 import wtdl1200 from "../assets/projects/wtd/light-1200.webp"
 
+// Olde Town Blade
+import otb14ProMax800 from "../assets/gallery/otb/otb14promax-800.webp"
+import otb14ProMax1200 from "../assets/gallery/otb/otb14promax-1200.webp"
+import otbAbout800 from "../assets/gallery/otb/otbabout-800.webp"
+import otbAbout1200 from "../assets/gallery/otb/otbabout-1200.webp"
+import otbContact1800 from "../assets/gallery/otb/otbcontact1-800.webp"
+import otbContact11200 from "../assets/gallery/otb/otbcontact1-1200.webp"
+import otbContact2800 from "../assets/gallery/otb/otbcontact2-800.webp"
+import otbContact21200 from "../assets/gallery/otb/otbcontact2-1200.webp"
+import otbHome1800 from "../assets/gallery/otb/otbhome1-800.webp"
+import otbHome11200 from "../assets/gallery/otb/otbhome1-1200.webp"
+import otbHome2800 from "../assets/gallery/otb/otbhome2-800.webp"
+import otbHome21200 from "../assets/gallery/otb/otbhome2-1200.webp"
+import otbS20u800 from "../assets/gallery/otb/otbs20ultra-800.webp"
+import otbS20u1200 from "../assets/gallery/otb/otbs20ultra-1200.webp"
+import otbServices800 from "../assets/gallery/otb/otbservices-800.webp"
+import otbServices1200 from "../assets/gallery/otb/otbservices-1200.webp"
+
 export const galleryImages = {
     eldenmemory: [
         {
@@ -128,4 +146,62 @@ export const galleryImages = {
             caption: "Write That Down page in light mode",
         },
     ],
+    otb: [
+    {
+      src: otbHome11200,
+      srcSet: `${otbHome1800} 800w, ${otbHome11200} 1200w`,
+      sizes: "(max-width: 768px) 92vw, 1200px",
+      alt: "Olde Town Blade homepage with hero banner and booking call-to-action",
+      caption: "Homepage hero with primary call-to-action",
+    },
+    {
+      src: otbHome21200,
+      srcSet: `${otbHome2800} 800w, ${otbHome21200} 1200w`,
+      sizes: "(max-width: 768px) 92vw, 1200px",
+      alt: "Olde Town Blade homepage with services and testimonials",
+      caption: "Homepage service overview and testimonial sections",
+    },
+    {
+      src: otbAbout1200,
+      srcSet: `${otbAbout800} 800w, ${otbAbout1200} 1200w`,
+      sizes: "(max-width: 768px) 92vw, 1200px",
+      alt: "Olde Town Blade about page",
+      caption: "About page with shop background and brand story",
+    },
+    {
+      src: otbServices1200,
+      srcSet: `${otbServices800} 800w, ${otbServices1200} 1200w`,
+      sizes: "(max-width: 768px) 92vw, 1200px",
+      alt: "Olde Town Blade Services page",
+      caption: "Services page detailing offerings and pricing",
+    },
+    {
+      src: otbContact11200,
+      srcSet: `${otbContact1800} 800w, ${otbContact11200} 1200w`,
+      sizes: "(max-width: 768px) 92vw, 1200px",
+      alt: "Olde Town Blade Contact page",
+      caption: "Contact page with business details and location info",
+    },
+    {
+      src: otbContact21200,
+      srcSet: `${otbContact2800} 800w, ${otbContact21200} 1200w`,
+      sizes: "(max-width: 768px) 92vw, 1200px",
+      alt: "Olde Town Blade Contact page",
+      caption: "Contact form for customer inquiries",
+    },
+    {
+      src: otb14ProMax1200,
+      srcSet: `${otb14ProMax800} 800w, ${otb14ProMax1200} 1200w`,
+      sizes: "(max-width: 768px) 92vw, 1200px",
+      alt: "Olde Town Blade Mobile Preview",
+      caption: "Responsive homepage preview (iPhone 14 Pro Max)",
+    },
+    {
+      src: otbS20u1200,
+      srcSet: `${otbS20u800} 800w, ${otbS20u1200} 1200w`,
+      sizes: "(max-width: 768px) 92vw, 1200px",
+      alt: "Olde Town Blade Mobile Preview",
+      caption: "Responsive homepage preview (Galaxy S20 Ultra)",
+    },
+  ],
 };
