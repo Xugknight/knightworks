@@ -1,1 +1,1 @@
-export const FEATURED_ALBUM_SLUGS = ["finchcollector"]; 
+export const FEATURED_ALBUM_SLUGS = ["otb", "finchcollector"]; 
