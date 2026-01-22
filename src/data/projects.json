@@ -12,6 +12,19 @@
         "featured": true
     },
     {
+        "slug": "game-club",
+        "title": "Game Club",
+        "desc": "Discover games via RAWG and browse curated lists.",
+        "tags": [
+            "MERN", 
+            "RAWG API"
+        ],
+        "image": "/bookbound.png",
+        "live": "https://gameclub.knightworks.dev",
+        "code": "https://github.com/Xugknight/game-club",
+        "featured": true
+    },
+    {
         "slug": "quick-notes",
         "title": "Quick-Notes",
         "desc": "Fast CRUD notes app.",

@@ -14,6 +14,10 @@ import em1200 from "../assets/gallery/eldenmemory/eldenmemoryhome-1200.webp";
 import wtd800 from "../assets/projects/wtd/light-800.webp"
 import wtd1200 from "../assets/projects/wtd/light-1200.webp"
 
+// Game Club
+import gc800 from "../assets/projects/game-club/home-800.webp"
+import gc1200 from "../assets/projects/game-club/home-1200.webp"
+
 export const projectImages = {
     "bookbound": {
         hero: {
@@ -21,6 +25,14 @@ export const projectImages = {
             srcSet: `${bb800} 800w, ${bb1200} 1200w`,
             sizes: "(max-width: 768px) 92vw, 1200px",
             alt: "Bookbound – reading list app screenshot",
+        },
+    },
+    "game-club": {
+        hero: {
+            src: gc1200,
+            srcSet: `${gc800} 800w, ${gc1200} 1200w`,
+            sizes: "(max-width: 768px) 92vw, 1200px",
+            alt: "Game Club – video game discovery and reviews app screenshot",
         },
     },
     "quick-notes": {
