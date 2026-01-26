@@ -71,7 +71,7 @@ export default function About() {
                 <div className="mt-2 flex flex-wrap gap-2">
                     <a href="mailto:tim@knightworks.dev" className="rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1.5 text-sm text-[color:var(--text)] hover:opacity-90">Email</a>
                     <a href="https://github.com/Xugknight" target="_blank" rel="noreferrer" className="rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1.5 text-sm hover:opacity-90">GitHub</a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1.5 text-sm hover:opacity-90">LinkedIn</a>
+                    {/* <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="rounded-lg border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-1.5 text-sm hover:opacity-90">LinkedIn</a> */}
                 </div>
             </section>
         </main>
