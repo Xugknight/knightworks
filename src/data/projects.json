@@ -4,7 +4,8 @@
         "title": "Bookbound",
         "desc": "Search Open Library, save books, filter by status.",
         "tags": [
-            "MERN"
+            "MERN",
+            "Open Library API"
         ],
         "image": "/bookbound.png",
         "live": "https://bookbound.knightworks.dev/",
